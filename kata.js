@@ -42,3 +42,24 @@ function power(a, b) {
     console.log(factorial(5))
 
 
+    function fibonacci(n) {
+        let total = 0;
+        let result1 = 0; result2 = 1;
+        if (n=== 1) {
+        return 0;
+    }
+if (n=== 2) {
+    return 1;
+}
+let counter = 2;
+while (counter < n) {
+    total = add(result1, result2)
+    result1 = result2
+    result2 = total
+    counter += 1
+}
+return total
+    }
+    console.log(fibonacci(8))
+
+
